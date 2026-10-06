@@ -3,7 +3,7 @@ const process = require("node:process")
 
 async function connectDB() {
     try {
-        const connection = await mongoose.connect(process.env.MONGO_DB_URI)
+        await mongoose.connect(process.env.MONGO_DB_URI)
         console.log("MongoDB connected")
     } catch(error)
     {
