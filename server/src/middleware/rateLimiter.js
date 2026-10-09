@@ -3,7 +3,7 @@ const {rateLimit} = require("express-rate-limit")
 
 const apiLimiter = rateLimit({
     windowMs: 60 * 1000,
-    limit: 5,
+    limit: 25,
     legacyHeaders: false,
     keyGenerator: (req) => {
         return req.user?.id ?? req.ip
