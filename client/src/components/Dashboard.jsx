@@ -32,7 +32,7 @@ export default function Dashboard() {
       key={service._id}
       name={service.name}
       url={service.url}
-      status={service.status}
+      status={service.status}ff
     />
   ))
 
